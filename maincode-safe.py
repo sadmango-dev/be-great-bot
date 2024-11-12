@@ -22,7 +22,7 @@ async def send_random_message():
     schedule_random_message()
 
 def schedule_random_message():
-    delay_minutes = random.randint(2, 3)
+    delay_minutes = random.randint(10, 40)
     next_message_time = datetime.now() + timedelta(minutes=delay_minutes)
     print(f"Next message scheduled at: {next_message_time.strftime('%H:%M:%S')}")
 
